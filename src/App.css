@@ -1,38 +1,199 @@
-.App {
-  text-align: center;
+.rightcolumn {
+  background: #363740;
+  color: #dde2ff;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.rightlogo {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  margin-top: 41px;
+}
+.rightlogo > p {
+  position: absolute;
+  width: 55px;
+  height: 24px;
+  left: 76px;
+  margin-top: 5px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  color: #a4a6b3;
+  opacity: 0.7;
+}
+.rightoptions {
+  margin-top: 30px;
+  cursor: pointer;
+}
+.rightoptionselect {
+  display: flex;
+  flex-direction: row;
+}
+.rightoptionselect > P {
+  position: absolute;
+  height: 20px;
+  left: 76px;
+  right: 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #a4a6b3;
+}
+.optionselected {
+  border-color: #dde2ff;
+  border-style: solid;
+  border-width: 0px 0px 0px 4px;
+  border-radius: 2px;
+  margin-top: 30px;
+  cursor: pointer;
+  background-color: #363735;
+  width: 100%;
+  height: 100%;
+  padding: 10px 0px 10px 0px;
+}
+.optionselected > div > p {
+  color: #dde2ff !important;
 }
 
-.App-link {
-  color: #61dafb;
+.leftlogos {
+  margin-top: 41px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.noresult {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.3px;
+  color: #252733;
+  text-align: center;
+  margin: 25% 25% 25% 25%;
+}
+.username {
+  height: 18px;
+  right: 58px;
+  margin-left: 25px;
+  top: calc(50% - 18px / 2);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: right;
+  letter-spacing: 0.2px;
+  color: #252733;
+}
+.contentname {
+  height: 34px;
+  left: 0px;
+  right: 351px;
+  top: calc(50% - 34px / 2 + 1px);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.3px;
+  color: #252733;
+}
+.tabletitle {
+  height: 24px;
+  left: 32px;
+  right: 690px;
+  top: 32px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  color: #252733;
+}
+.tablesf {
+  width: 29px;
+  height: 20px;
+  margin-top: -3px;
+  margin-left: 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #4b506d;
+}
+.cardtable {
+  margin-top: 30px;
+  background: #ffffff;
+  border: 1px solid #dfe0eb;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+th {
+  height: 18px;
+  left: 31px;
+  right: 649px;
+  top: 0px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: #9fa2b4;
+}
+.avataricon {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+}
+.coluser {
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
+}
+.contentdes {
+  margin-left: 30px;
+}
+.contestdesp1 {
+  height: 20px;
+  left: 99px;
+  right: 649px;
+  top: calc(50% - 20px / 2 - 10px);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #252733;
+  overflow: hidden;
+}
+.contestdesp2 {
+  height: 16px;
+  margin-top: -10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+  color: #c5c7cd;
+}
+.contentl2 {
+  margin-top: 8px;
+}
+.prioritybtn {
+  border-radius: 100px !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #ffffff !important;
+  width: fit-content;
+  height: fit-content;
+  padding: revert !important;
+  margin-top: 10px;
+}
+tr:hover {
+  background-color: #f1f2fa;
+  cursor: pointer;
 }
